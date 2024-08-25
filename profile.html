@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle, #ffffff, #e9ecef);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    h2.section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      color: #ff5cc6;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .custom-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      border: 5px solid #ff5cc6;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .custom-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-box {
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      max-width: 100%;
+    }
+
+    .text-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .text-box h5 {
+      font-weight: 700;
+      color: #ff5cc6;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .text-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .text-box ul li {
+      margin-bottom: 10px;
+      color: #6c757d;
+      line-height: 1.6;
+    }
+
+    .text-box ul li strong {
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-box {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom bg-light shadow-sm">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="https://www.cs.mju.ac.th/assets/logo.aa2240c2.png" width="90" height="70" class="card-img-top" alt="Logo" />
+        </a>
+      </div>
+    
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="#" class="nav-link px-2">Contact</a></li>
+        <li><a href="#" class="nav-link px-2">Photo album</a></li>
+      </ul>
+    
+      <div class="col-md-3 text-end">
+      </div>
+    </header>
+       
+    <!-- Navbar -->
+  </div>
+<br>
+  <!-- Section Title -->
+  <div class="text-center">
+    <h2 class="section-title">ประวัติส่วนตัว</h2>
+  </div>
+  <!-- Section Title -->
+
+  <!-- Profile Section -->
+  <div class="container profile-section">
+    <div class="col-md-4">
+      <img src="img/onbb.jpg" alt="..." class="custom-image" />
+    </div>
+    <div class="col-md-8">
+      <div class="text-box">
+        <h5 class="mb-3">ข้อมูลส่วนตัว</h5>
+        <ul class="list-unstyled">
+          <li><strong>ชื่อ-นามสกุล:</strong> นางสาวอิทธิพร ขัดสี</li>
+          <li><strong>รหัสประจำตัว:</strong> 6604101402</li>
+          <li><strong>เลขที่บัตรประชาชน:</strong> 157990*******</li>
+          <li><strong>คณะ:</strong> วิทยาศาสตร์</li>
+          <li><strong>หลักสูตร:</strong> 65304010 วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์</li>
+          <li><strong>ระดับการศึกษา:</strong> ปริญญาตรี ปกติ</li>
+          <li><strong>ชื่อปริญญา:</strong> วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)</li>
+          <li><strong>ปีการศึกษาที่เข้า:</strong> 2566 / 1</li>
+          <li><strong>วันที่:</strong> 23/6/2566</li>
+          <li><strong>วุฒิก่อนเข้ารับการศึกษา:</strong> วิทย์ - คณิต 3.85</li>
+          <li><strong>จบการศึกษาจาก:</strong> โรงเรียนทองแสนขันวิทยา</li>
+          <li><strong>อ. ที่ปรึกษา:</strong> อาจารย์ ดร.พยุงศักดิ์ เกษมสำราญ</li>
+          <li><strong>ผลการศึกษา:</strong> <br> หน่วยกิตคำนวณ 36 <br> หน่วยกิตที่ผ่าน 36 </li>
+          <li><strong>วัน เดือน ปี เกิด (พ.ศ.):</strong> *******</li>
+          <li><strong>ที่อยู่:</strong> *******</li>
+          <li><strong>เบอร์โทรศัพท์:</strong> *******</li>
+          <li><strong>อีเมล:</strong> *******</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Profile Section -->
+
+  <!-- Footer -->
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+    <p class="text-center text-body-secondary">Copyright © 2024 Computer Science MJU</p>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
